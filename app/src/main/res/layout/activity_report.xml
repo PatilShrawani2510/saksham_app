@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Child Daily Report"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date" />
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etChildName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Child's name"
+            android:inputType="textPersonName" />
+
+        <!-- Therapist’s Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Therapist’s Name:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etTherapistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name"
+            android:inputType="textPersonName" />
+
+        <!-- Mood of the day -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mood of the day:"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/etMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Happy / Calm / Anxious / Irritable ..."
+            android:inputType="textCapSentences" />
+
+        <!-- Participation in Activities -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Participation in Activities:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etParticipation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Active / Needed prompts / Minimal"
+            android:inputType="textCapSentences" />
+
+        <!-- Energy level -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Energy level:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etEnergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Low / Medium / High"
+            android:inputType="textCapSentences" />
+
+        <!-- Teachings other than App -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teachings other than App:"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/etOtherTeachings"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="Describe non-app-based activities practiced today"
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- Difficulties faced -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Difficulties faced:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etDifficulties"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="Meltdowns, triggers, refusals, sensory issues..."
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- Recommendations for parents -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommendations for parents:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="Home practice, strategies, prompts to use..."
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- Therapist notes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Therapist notes:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etTherapistNotes"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|start"
+            android:hint="General observation, positive message..."
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <!-- Overall today's progress -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overall today’s progress:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/etOverallProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brief summary (e.g., Good / Steady / Needs support)"
+            android:inputType="textCapSentences" />
+
+        <!-- Optional action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

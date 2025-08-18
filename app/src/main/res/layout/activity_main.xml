@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardenbk"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/emojiGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418">
+
+        <FrameLayout
+            android:id="@+id/block5"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bulbb" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/block6"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/quizes" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/block1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/learn" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/block2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/board" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/block3"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lock" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/block4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_button">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/reports" />
+        </FrameLayout>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
